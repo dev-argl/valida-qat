@@ -5,8 +5,6 @@
  
  const  dato='PRT123';
 
- const port=process.env.SERVERPORT || 8080
- const serverip=process.env.SERVERIP || '0.0.0.0'
  
  
 
@@ -33,7 +31,6 @@
  
  /** EXPONEMOS EL SERVIDOR DE EXPRESS  */
  
- app.listen(port, serverip, function(req, res) {
-    console.log("Servicios de tipo de cambio se encuentra arriba");
- });
+ app.listen(process.env.PORT || 3000, 
+	() => console.log("Server is running..."));
  
