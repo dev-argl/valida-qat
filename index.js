@@ -6,7 +6,7 @@
  const  dato='PRT123';
 
  
- app.get('/consulta/status', function(req, res) {
+ app.get('/', function(req, res) {
 
     const valor = req.query.iniciativa;
     let row = null;
